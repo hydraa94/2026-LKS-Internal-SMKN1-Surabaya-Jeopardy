@@ -1,0 +1,10 @@
+services:
+  no-cat:
+    build: .
+    container_name: no-cat
+    hostname: no-cat
+
+    ports:
+      - "1337:1337"
+
+    restart: unless-stopped
