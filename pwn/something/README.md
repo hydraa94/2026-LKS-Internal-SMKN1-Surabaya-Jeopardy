@@ -11,7 +11,9 @@ LKS{sh3ll_code_goes_brrr}
 
 ## Description
 You can call the program anything u want.
-I made program that let u send everything and anything you want
+
+I made program that let u send everything and anything you want.
+
 Can you get the server's secret?
 
 Author: hidoraa
