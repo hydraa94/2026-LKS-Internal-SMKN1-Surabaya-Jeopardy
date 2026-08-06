@@ -23,19 +23,6 @@ nc <host> <port>
 ## Difficulty
 `easy`
 
-## Hints
-* Hint Pertama
-* Hint Kedua  
-* Hint Ketiga
-* Hint ke-n
-
 ## Tags
 `misc`
-
-## Deployment (jika diperlukan)
-Jika soal memerlukan deployment:
-```bash
-docker-compose up -d
-```
-Soal akan accessible di `http://localhost:PORT`
 
