@@ -2,11 +2,9 @@
 
 ## by frizz
 
-## Sleepy
+## Bingung
 
 ### Step by step
 
-- run the binary, wait too long
-- opened it in ghidra, find the sleep() function
-- read the asm instruction
-- patched the binary, could change the sleep() value, or just replaced it with NOP instruction
+- masukin file .pyc ke pylingual.io atau tools yang yang bisa decompile python bytecode
+- reverse login xor yang ditemukan
