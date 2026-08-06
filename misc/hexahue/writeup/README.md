@@ -1,0 +1,3 @@
+- [dcode.fr](https://www.dcode.fr/hexahue-cipher)
+- [geocachingtoolbox.com](https://www.geocachingtoolbox.com/index.php?lang=en&page=hexahue)
+- [boxentriq.com](https://www.boxentriq.com/alphabets/hexahue)
