@@ -23,6 +23,9 @@ nc <host> <port>
 ## Difficulty
 `easy`
 
+## Hints
+- `Command untuk melihat isi file bukan hanya itu saja`
+
 ## Tags
 `misc`
 

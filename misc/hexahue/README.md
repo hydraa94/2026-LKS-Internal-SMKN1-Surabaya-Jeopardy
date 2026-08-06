@@ -21,10 +21,7 @@ Author: hidoraa
 `medium`
 
 ## Hints
-* Hint Pertama
-* Hint Kedua  
-* Hint Ketiga
-* Hint ke-n
+- `Use ur google man`
 
 ## Tags
 `misc` `riddle`
