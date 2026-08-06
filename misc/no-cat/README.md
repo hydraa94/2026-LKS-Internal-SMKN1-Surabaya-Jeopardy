@@ -24,18 +24,8 @@ nc <host> <port>
 `easy`
 
 ## Hints
-* Hint Pertama
-* Hint Kedua  
-* Hint Ketiga
-* Hint ke-n
+- `Command untuk melihat isi file bukan hanya itu saja`
 
 ## Tags
 `misc`
-
-## Deployment (jika diperlukan)
-Jika soal memerlukan deployment:
-```bash
-docker-compose up -d
-```
-Soal akan accessible di `http://localhost:PORT`
 
