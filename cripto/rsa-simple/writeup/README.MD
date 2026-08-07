@@ -9,39 +9,9 @@ Challenge RSA klasik dengan modulus kecil. Flag dienkripsi per karakter (bukan p
 n = 3233
 e = 17
 ciphertexts = [2726, 597, 2680, ...]
+#langkah
 
-#Langkah penyelesaian
-
-
-Faktorisasi modulus
-Karena n sangat kecil, cukup trial division:
-
-n = 3233 = 61 × 53
-
-
-
-Hitung φ(n)
-
-φ(n) = (p-1)(q-1) = 60 × 52 = 3120
-
-
-
-Cari private key d
-
-d ≡ e⁻¹ mod φ(n)
-d = pow(17, -1, 3120) = 2753
-
-
-
-Dekripsi setiap ciphertext
-Untuk setiap c di list:
-
-m = pow(c, d, n)
-karakter = chr(m)
-
-
-
-Gabungkan hasilnya → flag lengkap.
+tinggal tambahkan n e c ke solver.py
 
 #Flag
 
