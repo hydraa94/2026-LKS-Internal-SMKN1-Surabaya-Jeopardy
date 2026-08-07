@@ -1,0 +1,8 @@
+RSA Easy Challenge
+
+The flag was encrypted one character at a time using RSA.
+Each ciphertext is computed as c = m^e mod n, where m is the ASCII value of a character.
+
+n = 3233
+e = 17
+ciphertexts = [2726, 597, 2680, 855, 2412, 1230, 1632, 119, 3179, 884, 1230, 119, 1369, 2160, 2235, 119, 1230, 1313, 2271, 1632, 2235, 2923, 1632, 884, 119, 745, 690, 1230, 2235, 487, 1632, 1516]
