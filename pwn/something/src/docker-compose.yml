@@ -1,0 +1,8 @@
+services:
+  chall:
+    build: .
+    environment:
+      - TERM=xterm
+    ports:
+      - "4050:1337"
+    restart: unless-stopped
