@@ -18,8 +18,6 @@ Can you test it for us please?
 
 Author: hidoraa
 
-nc <host> <port>
-
 ## Difficulty
 `easy`
 

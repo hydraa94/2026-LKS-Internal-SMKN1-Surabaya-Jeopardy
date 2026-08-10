@@ -1,0 +1,11 @@
+services:
+  no-cat:
+    build: .
+    container_name: no-cat
+    hostname: no-cat
+    environment:
+      - TERM=xterm
+    ports:
+      - "2450:1337"
+
+    restart: unless-stopped
