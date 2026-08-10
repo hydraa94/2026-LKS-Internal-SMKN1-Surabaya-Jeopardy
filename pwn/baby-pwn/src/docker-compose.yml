@@ -1,0 +1,21 @@
+services:
+  chall:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    ports:
+      - "1327:1337"
+
+    restart: unless-stopped
+
+    mem_limit: 64m
+    cpus: 0.25
+    pids_limit: 32
+
+    read_only: true
+    tmpfs:
+      - /tmp:size=4m
+
+    security_opt:
+      - no-new-privileges:true
