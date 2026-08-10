@@ -1,7 +1,7 @@
-# ganti saja itunya lalu di inikan
-# N = ?
-# E = ?
-# CIPHERTEXTS = [?]
+# masukan saja itunya lalu hapus yang gk perlu lalu di inikan 
+n = []
+E = []
+CIPHERTEXTS = []
 
 
 def factor_n(n: int):
@@ -13,11 +13,11 @@ def factor_n(n: int):
 
 
 def main():
-    p, q = factor_n(N)
+    p, q = factor_n(n)
     phi = (p - 1) * (q - 1)
     d = pow(E, -1, phi)  # private key
 
-    plaintext = "".join(chr(pow(c, d, N)) for c in CIPHERTEXTS)
+    plaintext = "".join(chr(pow(c, d, n)) for c in CIPHERTEXTS)
     print(plaintext)
 
 
