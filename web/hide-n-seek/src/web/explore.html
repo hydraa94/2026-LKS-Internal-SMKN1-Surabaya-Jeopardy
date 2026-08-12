@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discoveries & Missions | NOVA Observatory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #e5e5e5; }
+        h1, h2, h3, .font-space { font-family: 'Space Grotesk', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    </style>
+</head>
+<body class="overflow-x-hidden pt-24">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center">
+                <div class="w-4 h-4 bg-black rounded-full"></div>
+            </div>
+            <span class="text-xl font-bold tracking-widest font-space">NOVA</span>
+        </div>
+        <div class="hidden md:flex gap-8 text-sm font-medium tracking-widest uppercase">
+            <a href="index.html" class="hover:text-cyan-400 transition-colors">Observatory</a>
+            <a href="#discoveries" id="discovery-tab" class="text-cyan-400 border-b-2 border-cyan-400 cursor-pointer">Discoveries</a>
+            <a href="#missions" id="mission-tab" class="text-gray-400 hover:text-cyan-400 transition-colors cursor-pointer">Missions</a>
+        </div>
+        <a href="index.html" class="px-5 py-2 border border-white/10 text-xs font-bold uppercase tracking-tighter hover:bg-white hover:text-black transition-colors">Back Home</a>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-12 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="animate-on-scroll">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tighter">EXPLORATION <span class="text-cyan-400">ARCHIVE</span></h1>
+            <p class="text-gray-400 max-w-2xl text-lg">A comprehensive digital record of humanity's greatest scientific achievements in deep space exploration.</p>
+        </div>
+    </header>
+
+    <!-- Discoveries Content -->
+    <main id="discovery-content" class="px-6 md:px-12 max-w-7xl mx-auto pb-24">
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-12">
+            <!-- 1. Pillars of Creation -->
+            <div class="group animate-on-scroll">
+                <div class="aspect-[16/9] overflow-hidden rounded-xl border border-white/10 mb-6">
+                    <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2022/10/STScI-01GGF8H15VZ09MET9HFBRQX4S3.png?w=887&h=1536&fit=crop&crop=faces%2Cfocalpoint" alt="Pillars of Creation" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="md:col-span-1 space-y-4">
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Object</p>
+                            <p class="font-bold">Pillars of Creation</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Instrument</p>
+                            <p class="font-bold">James Webb</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Observation</p>
+                            <p class="font-bold italic">Oct 2022</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2">
+                        <p class="text-gray-400 leading-relaxed">NASA's James Webb Space Telescope captured this extremely detailed landscape where new stars are forming within dense clouds of gas and dust. The three-dimensional pillars look like majestic rock formations but are far more permeable.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Carina Nebula -->
+            <div class="group animate-on-scroll">
+                <div class="aspect-[16/9] overflow-hidden rounded-xl border border-white/10 mb-6">
+                    <img src="https://assets.science.nasa.gov/content/dam/science/missions/webb/science/2022/07/STScI-01GA6KKWG229B16K4Q38CH3BXS.png/jcr:content/renditions/cq5dam.web.1280.1280.png" alt="Carina Nebula" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="md:col-span-1 space-y-4">
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Object</p>
+                            <p class="font-bold">Carina Nebula</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Instrument</p>
+                            <p class="font-bold">James Webb</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Observation</p>
+                            <p class="font-bold italic">July 2022</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2">
+                        <p class="text-gray-400 leading-relaxed">This landscape of "mountains" and "valleys" speckled with glittering stars is actually the edge of a nearby, young, star-forming region called NGC 3324 in the Carina Nebula.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Orion Nebula -->
+            <div class="group animate-on-scroll">
+                <div class="aspect-[16/9] overflow-hidden rounded-xl border border-white/10 mb-6">
+                    <img src="https://images-assets.nasa.gov/image/PIA08362/PIA08362~orig.jpg" alt="Orion Nebula" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="md:col-span-1 space-y-4">
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Object</p>
+                            <p class="font-bold">Orion Nebula</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Instrument</p>
+                            <p class="font-bold">Hubble / Spitzer</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Observation</p>
+                            <p class="font-bold italic">Deep Sky Archive</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2">
+                        <p class="text-gray-400 leading-relaxed">The Orion Nebula is a picture-book of star formation, from the massive, young stars that are shaping the nebula to the pillars of dense gas that may be the homes of budding stars.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Andromeda Galaxy -->
+            <div class="group animate-on-scroll">
+                <div class="aspect-[16/9] overflow-hidden rounded-xl border border-white/10 mb-6">
+                    <img src="https://science.nasa.gov/wp-content/uploads/2023/04/hs-2015-02-a-hires_jpg-jpg.webp" alt="Andromeda" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="md:col-span-1 space-y-4">
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Object</p>
+                            <p class="font-bold">Andromeda Galaxy</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Instrument</p>
+                            <p class="font-bold">Hubble</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Observation</p>
+                            <p class="font-bold italic">M31 Survey</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2">
+                        <p class="text-gray-400 leading-relaxed">Andromeda is the closest large spiral galaxy to our own. Hubble has captured over 100 million stars and thousands of star clusters within a section of the galaxy’s pancake-shaped disk.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Sombrero Galaxy -->
+            <div class="group animate-on-scroll">
+                <div class="aspect-[16/9] overflow-hidden rounded-xl border border-white/10 mb-6">
+                    <img src="https://science.nasa.gov/wp-content/uploads/2023/04/sombrero-galaxy-hubble-jpg.webp" alt="Sombrero Galaxy" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="md:col-span-1 space-y-4">
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Object</p>
+                            <p class="font-bold">Sombrero Galaxy</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Instrument</p>
+                            <p class="font-bold">Hubble / Spitzer</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Observation</p>
+                            <p class="font-bold italic">M104</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2">
+                        <p class="text-gray-400 leading-relaxed">The galaxy's hallmark is a brilliant white, bulbous core encircled by thick dust lanes comprising the spiral structure of the galaxy. It is located 28 million light-years from Earth.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Whirlpool Galaxy -->
+            <div class="group animate-on-scroll">
+                <div class="aspect-[16/9] overflow-hidden rounded-xl border border-white/10 mb-6">
+                    <img src="https://science.nasa.gov/wp-content/uploads/2023/04/m51-and-companion_0-jpg.webp" alt="Whirlpool Galaxy" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="md:col-span-1 space-y-4">
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Object</p>
+                            <p class="font-bold">Whirlpool Galaxy</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Instrument</p>
+                            <p class="font-bold">Hubble</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Observation</p>
+                            <p class="font-bold italic">M51</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2">
+                        <p class="text-gray-400 leading-relaxed">The Whirlpool Galaxy is a classic spiral galaxy. Its graceful, curving arms are actually long lanes of stars and gas laced with dust.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Missions Content -->
+    <main id="mission-content" class="hidden px-6 md:px-12 max-w-7xl mx-auto pb-24">
+        <div class="space-y-24">
+            <!-- James Webb -->
+            <div class="grid md:grid-cols-2 gap-16 items-center animate-on-scroll">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 font-space">James Webb Space Telescope</h2>
+                    <div class="flex gap-4 mb-8">
+                        <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-400/20 text-xs font-bold uppercase tracking-widest">Active</span>
+                        <span class="px-3 py-1 bg-white/5 text-gray-400 border border-white/10 text-xs font-bold uppercase tracking-widest">Astrophysics</span>
+                    </div>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">NASA says Webb operates around the Sun–Earth L2 point and studies the history of the Universe, from the earliest luminous objects through galaxy and star formation.</p>
+                    <div class="border-l-4 border-cyan-500 pl-6 py-2">
+                        <p class="text-sm font-bold uppercase tracking-tighter text-gray-500 mb-1">Launch Date</p>
+                        <p class="text-2xl font-space font-bold">December 25, 2021</p>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://science.nasa.gov/wp-content/uploads/2024/05/jwst_artist_concept_0.png?w=1041" alt="JWST" class="rounded-2xl border border-white/10">
+                </div>
+            </div>
+
+            <!-- Hubble -->
+            <div class="grid md:grid-cols-2 gap-16 items-center animate-on-scroll">
+                <div>
+                    <img src="https://science.nasa.gov/wp-content/uploads/2023/04/s31-76-026-jpg.webp" alt="Hubble" class="rounded-2xl border border-white/10">
+                </div>
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 font-space">Hubble Space Telescope</h2>
+                    <div class="flex gap-4 mb-8">
+                        <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-400/20 text-xs font-bold uppercase tracking-widest">Active</span>
+                        <span class="px-3 py-1 bg-white/5 text-gray-400 border border-white/10 text-xs font-bold uppercase tracking-widest">Space Telescope</span>
+                    </div>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">NASA describes Hubble as a mission that fundamentally changed our understanding of the Universe. It has made more than 1.5 million observations during its lifetime.</p>
+                    <div class="border-l-4 border-cyan-500 pl-6 py-2">
+                        <p class="text-sm font-bold uppercase tracking-tighter text-gray-500 mb-1">Launch Date</p>
+                        <p class="text-2xl font-space font-bold">April 24, 1990</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Voyager -->
+            <div class="grid md:grid-cols-2 gap-16 items-center animate-on-scroll">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 font-space">Voyager</h2>
+                    <div class="flex gap-4 mb-8">
+                        <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-400/20 text-xs font-bold uppercase tracking-widest">Extended Mission</span>
+                        <span class="px-3 py-1 bg-white/5 text-gray-400 border border-white/10 text-xs font-bold uppercase tracking-widest">Deep-space exploration</span>
+                    </div>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">Voyager 1 and Voyager 2 are the only spacecraft to have operated outside the heliosphere. They are continuing their quest to push the boundaries of space exploration.</p>
+                    <p class="text-cyan-400 italic mb-8 font-light">"There is always something beyond what we can see."</p>
+                    <div class="border-l-4 border-cyan-500 pl-6 py-2">
+                        <p class="text-sm font-bold uppercase tracking-tighter text-gray-500 mb-1">Launch Date</p>
+                        <p class="text-2xl font-space font-bold">1977</p>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://images-assets.nasa.gov/image/PIA00452/PIA00452~orig.jpg" alt="Pale Blue Dot / Voyager" class="rounded-2xl border border-white/10">
+                </div>
+            </div>
+
+            <!-- Perseverance -->
+            <div class="grid md:grid-cols-2 gap-16 items-center animate-on-scroll">
+                <div>
+                    <img src="https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26344/PIA26344.gif?w=5251&h=3729&fit=clip&crop=faces%2Cfocalpoint" alt="Perseverance" class="rounded-2xl border border-white/10">
+                </div>
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 font-space">Perseverance</h2>
+                    <div class="flex gap-4 mb-8">
+                        <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-400/20 text-xs font-bold uppercase tracking-widest">Active</span>
+                        <span class="px-3 py-1 bg-white/5 text-gray-400 border border-white/10 text-xs font-bold uppercase tracking-widest">Mars Rover</span>
+                    </div>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">NASA says Perseverance is collecting core samples of Martian rock and regolith for potential future return to Earth, searching for signs of ancient microbial life.</p>
+                    <div class="border-l-4 border-cyan-500 pl-6 py-2">
+                        <p class="text-sm font-bold uppercase tracking-tighter text-gray-500 mb-1">Mission</p>
+                        <p class="text-2xl font-space font-bold">Mars 2020</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Europa Clipper -->
+            <div class="grid md:grid-cols-2 gap-16 items-center animate-on-scroll">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 font-space">Europa Clipper</h2>
+                    <div class="flex gap-4 mb-8">
+                        <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-400/20 text-xs font-bold uppercase tracking-widest">In Development</span>
+                        <span class="px-3 py-1 bg-white/5 text-gray-400 border border-white/10 text-xs font-bold uppercase tracking-widest">Planetary Science</span>
+                    </div>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">NASA describes Europa Clipper as the first mission designed to conduct a detailed study of Jupiter's moon Europa to determine if it has conditions suitable for life.</p>
+                    <div class="border-l-4 border-cyan-500 pl-6 py-2">
+                        <p class="text-sm font-bold uppercase tracking-tighter text-gray-500 mb-1">Target</p>
+                        <p class="text-2xl font-space font-bold">Jupiter's Moon Europa</p>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/cds/general/images/2024/05/europa-clipper-with-high-gain-antenna-pia25958.jpg?w=768&h=512&fit=crop&crop=faces%2Cfocalpoint" alt="Europa Clipper" class="rounded-2xl border border-white/10">
+                </div>
+            </div>
+
+             <!-- Artemis -->
+             <div class="grid md:grid-cols-2 gap-16 items-center animate-on-scroll">
+                <div>
+                    <img src="https://www.nasa.gov/wp-content/uploads/2023/02/Artemis-I-launch.jpg" alt="Artemis" class="rounded-2xl border border-white/10">
+                </div>
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 font-space">Artemis</h2>
+                    <div class="flex gap-4 mb-8">
+                        <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-400/20 text-xs font-bold uppercase tracking-widest">Active Program</span>
+                        <span class="px-3 py-1 bg-white/5 text-gray-400 border border-white/10 text-xs font-bold uppercase tracking-widest">Lunar Exploration</span>
+                    </div>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">NASA describes Artemis I as the first in a series of increasingly complex missions supporting lunar exploration and future Mars missions. The program aims to land the first woman and first person of color on the Moon.</p>
+                    <div class="grid grid-cols-3 gap-4 border-l-4 border-cyan-500 pl-6 py-2">
+                        <div>
+                            <p class="text-[10px] font-bold uppercase text-gray-500">Artemis I</p>
+                            <p class="font-bold">Completed</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold uppercase text-gray-500">Artemis II</p>
+                            <p class="font-bold">Planned</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold uppercase text-gray-500">Artemis III</p>
+                            <p class="font-bold">Planned</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-12 border-t border-white/5 text-center text-gray-500 text-sm mt-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- REMOVE BEFORE DEPLOY -->
+            <!-- FLAG PART 2: uN5eEn_wa$_h3R3 -->
+            <p class="uppercase tracking-widest mb-4">NOVA Observatory &copy; 2026</p>
+            <p class="max-w-md mx-auto italic">All data provided by NASA. Images used are real astronomical observations.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Handle direct hash links
+        window.addEventListener('load', () => {
+            if(window.location.hash === '#missions') {
+                document.getElementById('mission-tab').click();
+            }
+        });
+        window.addEventListener('hashchange', () => {
+            if(window.location.hash === '#missions') {
+                document.getElementById('mission-tab').click();
+            } else if(window.location.hash === '#discoveries') {
+                document.getElementById('discovery-tab').click();
+            }
+        });
+    </script>
+</body>
+</html>

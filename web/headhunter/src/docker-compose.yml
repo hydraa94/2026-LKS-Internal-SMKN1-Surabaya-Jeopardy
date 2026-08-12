@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  headhunter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: web-headhunter
+    
+    ports:
+      - "1387:3000"
+    environment:
+      - FLAG=LKS{h34d_hunt3r_4_f0und_m3_v14_h34d3rs}
+      - PORT=3000
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true

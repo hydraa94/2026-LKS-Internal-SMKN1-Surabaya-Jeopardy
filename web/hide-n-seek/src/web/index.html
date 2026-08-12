@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA Observatory | Exploring the Universe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #e5e5e5; }
+        h1, h2, h3, .font-space { font-family: 'Space Grotesk', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hero-gradient { background: linear-gradient(to bottom, rgba(5,5,5,0.2) 0%, rgba(5,5,5,1) 100%); }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center">
+                <div class="w-4 h-4 bg-black rounded-full"></div>
+            </div>
+            <span class="text-xl font-bold tracking-widest font-space">NOVA</span>
+        </div>
+        <div class="hidden md:flex gap-8 text-sm font-medium tracking-widest uppercase">
+            <a href="index.html" class="text-cyan-400">Observatory</a>
+            <a href="explore.html" class="hover:text-cyan-400 transition-colors">Discoveries</a>
+            <a href="explore.html#missions" class="hover:text-cyan-400 transition-colors">Missions</a>
+        </div>
+        <a href="explore.html" class="px-5 py-2 bg-white text-black text-xs font-bold uppercase tracking-tighter hover:bg-cyan-400 transition-colors">Explore</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2022/07/STScI-01G8H1K2BCNATEZSKVRN9Z69SR.png?w=1960&h=2000&fit=crop&crop=faces%2Cfocalpoint" alt="James Webb Deep Field" class="absolute w-full h-full object-cover scale-110">
+        <div class="absolute inset-0 hero-gradient"></div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl animate-on-scroll">
+            <h1 class="text-6xl md:text-9xl font-bold tracking-tighter mb-4">NOVA<br><span class="text-cyan-400 italic">OBSERVATORY</span></h1>
+            <p class="text-xl md:text-2xl font-light mb-2 text-gray-300">There is always something beyond what we can see.</p>
+            <p class="text-sm md:text-base text-gray-400 uppercase tracking-[0.3em] mb-12">Exploring humanity's view of the universe through decades of observation.</p>
+            
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                <a href="explore.html" class="w-full md:w-auto px-10 py-4 bg-cyan-500 text-black font-bold uppercase tracking-widest hover:bg-white transition-all transform hover:-translate-y-1">Explore Discoveries</a>
+                <a href="explore.html#missions" class="w-full md:w-auto px-10 py-4 border border-white/20 hover:bg-white/10 font-bold uppercase tracking-widest transition-all">View Missions</a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <!-- In Focus Section -->
+    <section class="py-24 px-6 md:px-12 bg-black overflow-hidden">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="animate-on-scroll">
+                <span class="text-cyan-400 font-bold uppercase tracking-widest text-sm mb-4 block">In Focus</span>
+                <h2 class="text-4xl md:text-6xl font-bold mb-8 leading-tight">James Webb Space Telescope</h2>
+                <div class="space-y-6 text-gray-400 text-lg">
+                    <p>NASA describes Webb as an observatory studying every phase of the Universe's history, from the first luminous glows after the Big Bang to the formation of solar systems capable of supporting life on planets like Earth.</p>
+                    <div class="grid grid-cols-2 gap-8 py-8 border-y border-white/10">
+                        <div>
+                            <p class="text-xs uppercase tracking-widest text-gray-500 mb-1">Launched</p>
+                            <p class="text-white font-space font-bold">Dec 25, 2021</p>
+                        </div>
+                        <div>
+                            <p class="text-xs uppercase tracking-widest text-gray-500 mb-1">Location</p>
+                            <p class="text-white font-space font-bold">Sun–Earth L2</p>
+                        </div>
+                        <div>
+                            <p class="text-xs uppercase tracking-widest text-gray-500 mb-1">Mission Type</p>
+                            <p class="text-white font-space font-bold">Astrophysics</p>
+                        </div>
+                        <div>
+                            <p class="text-xs uppercase tracking-widest text-gray-500 mb-1">Partners</p>
+                            <p class="text-white font-space font-bold">NASA / ESA / CSA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative animate-on-scroll">
+                <div class="absolute -inset-4 bg-cyan-500/20 blur-3xl rounded-full"></div>
+                <img src="https://science.nasa.gov/wp-content/uploads/2024/05/jwst_artist_concept_0.png?w=1041" alt="Webb Telescope" class="relative rounded-2xl grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl border border-white/10">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Discoveries -->
+    <section class="py-24 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-16">
+                <div class="animate-on-scroll">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4">Featured Discoveries</h2>
+                    <p class="text-gray-500 max-w-xl italic">A curated selection of the most breathtaking phenomena observed by our deep-space instruments.</p>
+                </div>
+                <a href="explore.html" class="hidden md:block text-cyan-400 font-bold uppercase tracking-widest text-sm hover:translate-x-2 transition-transform">View Archive &rarr;</a>
+            </div>
+
+            <!-- REMOVE BEFORE DEPLOY TO PRODUCTION -->
+            <!-- FLAG PART 1: LKS{tHe_  -->
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Pillars of Creation -->
+                <div class="group animate-on-scroll">
+                    <div class="relative aspect-square overflow-hidden mb-6 rounded-lg border border-white/10">
+                        <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2022/10/STScI-01GGF8H15VZ09MET9HFBRQX4S3.png?w=887&h=1536&fit=crop&crop=faces%2Cfocalpoint" alt="Pillars of Creation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="px-6 py-2 bg-white text-black text-xs font-bold uppercase tracking-widest">Detail View</span>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-start border-b border-white/5 pb-4">
+                            <div>
+                                <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-1">Object</p>
+                                <h3 class="text-xl font-bold group-hover:text-cyan-400 transition-colors">Pillars of Creation</h3>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-1">Observed By</p>
+                                <p class="text-xs font-bold uppercase">James Webb</p>
+                            </div>
+                            <div>
+                                <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-1">Category</p>
+                                <p class="text-xs font-bold uppercase">Nebula</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carina Nebula -->
+                <div class="group animate-on-scroll">
+                    <div class="relative aspect-square overflow-hidden mb-6 rounded-lg border border-white/10">
+                        <img src="https://assets.science.nasa.gov/content/dam/science/missions/webb/science/2022/07/STScI-01GA6KKWG229B16K4Q38CH3BXS.png/jcr:content/renditions/cq5dam.web.1280.1280.png" alt="Carina Nebula" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="px-6 py-2 bg-white text-black text-xs font-bold uppercase tracking-widest">Detail View</span>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-start border-b border-white/5 pb-4">
+                            <div>
+                                <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-1">Object</p>
+                                <h3 class="text-xl font-bold group-hover:text-cyan-400 transition-colors">Carina Nebula</h3>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-1">Observed By</p>
+                                <p class="text-xs font-bold uppercase">James Webb</p>
+                            </div>
+                            <div>
+                                <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-1">Category</p>
+                                <p class="text-xs font-bold uppercase">Nebula</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Crab Nebula -->
+                <div class="group animate-on-scroll">
+                    <div class="relative aspect-square overflow-hidden mb-6 rounded-lg border border-white/10">
+                        <img src="https://images-assets.nasa.gov/image/PIA17563/PIA17563~orig.jpg" alt="Crab Nebula" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="px-6 py-2 bg-white text-black text-xs font-bold uppercase tracking-widest">Detail View</span>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-start border-b border-white/5 pb-4">
+                            <div>
+                                <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-1">Object</p>
+                                <h3 class="text-xl font-bold group-hover:text-cyan-400 transition-colors">Crab Nebula</h3>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-1">Observed By</p>
+                                <p class="text-xs font-bold uppercase">Hubble / Webb</p>
+                            </div>
+                            <div>
+                                <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-1">Category</p>
+                                <p class="text-xs font-bold uppercase">Nebula</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center text-gray-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="uppercase tracking-widest mb-4">NOVA Observatory &copy; 2026</p>
+            <p class="max-w-md mx-auto italic">Data and imagery provided by NASA. NOVA is a fictional independent research platform.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

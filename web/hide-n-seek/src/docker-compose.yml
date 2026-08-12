@@ -1,0 +1,11 @@
+services:
+  hide-n-seek:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: web-hide-n-seek
+
+    restart: unless-stopped
+
+    ports: "1307:80"

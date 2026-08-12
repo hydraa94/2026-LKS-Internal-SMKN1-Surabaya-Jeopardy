@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  headhunter:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - FLAG=LKS{placeholder_for_local_testing}
+      - PORT=3000
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
