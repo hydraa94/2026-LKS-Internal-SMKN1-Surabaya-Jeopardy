@@ -1,8 +1,10 @@
 services:
-  chall:
+  baby-pwn:
     build:
       context: .
       dockerfile: Dockerfile
+
+    container_name: pwn-baby-pwn
 
     ports:
       - "1327:1337"
