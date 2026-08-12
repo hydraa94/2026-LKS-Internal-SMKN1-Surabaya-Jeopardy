@@ -1,11 +1,17 @@
 services:
   no-cat:
-    build: .
-    container_name: no-cat
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: misc-no-cat
+
     hostname: no-cat
+
     environment:
       - TERM=xterm
+
     ports:
-      - "2450:1337"
+      - "1347:1337"
 
     restart: unless-stopped
