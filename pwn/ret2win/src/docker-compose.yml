@@ -1,6 +1,12 @@
 services:
-  chall:
-    build: .
+  ret2win:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
+    container_name: pwn-ret2win
+
     ports:
       - "1337:1337"
+
     restart: unless-stopped
