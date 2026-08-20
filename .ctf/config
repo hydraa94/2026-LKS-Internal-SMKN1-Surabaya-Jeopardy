@@ -1,0 +1,6 @@
+[config]
+url = http://192.168.100.133:8000/
+access_token = ctfd_c37b54b7e31932b3272ba4dbf536984b197f5242994f05dc6466ab2b151012c0
+
+[challenges]
+
