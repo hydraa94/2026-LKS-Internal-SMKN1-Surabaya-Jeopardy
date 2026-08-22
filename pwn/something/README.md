@@ -28,5 +28,5 @@ nc <host> <port>
 - `shellcode assembly`
 
 ## Tags
-`misc`
+`shellcraft`
 

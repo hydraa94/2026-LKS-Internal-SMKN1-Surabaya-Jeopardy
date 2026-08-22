@@ -16,6 +16,9 @@ Can you get the flag?
 
 Author: hidoraa
 
+## Connection Info
+nc 194.164.148.36 1327
+
 ## Difficulty
 `baby`
 
