@@ -12,6 +12,8 @@ image: null
 protocol: null
 host: null
 
+connection_info: "http://194.164.148.36:1307/"
+
 solution: writeup/README.md
 
 attempts: 0

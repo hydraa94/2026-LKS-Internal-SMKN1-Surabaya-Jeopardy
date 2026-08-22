@@ -13,6 +13,8 @@ host: null
 
 solution: writeup/README.md
 
+connection_info: "http://194.164.148.36:1387"
+
 attempts: 0
 
 logic: any

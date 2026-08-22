@@ -8,4 +8,5 @@ services:
 
     restart: unless-stopped
 
-    ports: "1307:80"
+    ports: 
+      - "1307:80"
