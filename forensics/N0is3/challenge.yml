@@ -1,0 +1,33 @@
+name: "N0is3" 
+author: "Y4E3"
+category: forensics
+description: |
+ Jakarta and Bandung are in chaos. Gedung Sate has been stormed, Sahroni’s house is under siege, and the House of Representatives (DPR) building is paralyzed. We do not know where the mob will move next.
+ To stay ahead of the situation, we planted an intel within the group of agitators. Tonight, our team managed to identify the next location, but the information was sent in a peculiar format.
+ As part of the forensics team, you must determine the nature of that message and report your findings to your commander.
+
+value: 100
+type: standard
+
+image: null
+protocol: null
+host: null
+
+solution: writeup/README.md
+
+attempts: 0
+
+logic: any
+
+flags:
+    - LKS{DEMO_IN_GRAHADI}
+
+tags:
+    - forensics
+    - steganography 
+
+state: hidden
+
+requirements: []
+next: null
+module: null

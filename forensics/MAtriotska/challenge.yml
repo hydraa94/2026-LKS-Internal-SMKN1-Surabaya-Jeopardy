@@ -1,0 +1,30 @@
+name: "MaTrioska is Matryoshka" 
+author: "Y4E3"
+category: forensics
+description: |
+ only one suspicious Matryoshka
+
+value: 200  
+type: standard
+
+image: null
+protocol: null
+host: null
+
+solution: writeup/README.md
+
+attempts: 0
+
+logic: any
+
+flags:
+    - LKS{M4tri0ska_b1k1n_C4pek}
+
+tags:
+    - forensics
+
+state: hidden
+
+requirements: []
+next: null
+module: null
