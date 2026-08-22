@@ -1,0 +1,33 @@
+name: "Jendral Julius Caesar"
+author: "NasiGoreng"
+category: crypto
+description: |
+  Seorang jendral bernama Julius Caesar telah menyembunyikan sebuah pesan rahasia. Bisakah kamu menemukan pesan rahasia tersebut?
+
+value: 150
+type: standard
+
+image: null
+protocol: null
+host: null
+
+solution: writeup/README.md
+
+attempts: 0
+
+logic: any
+
+flags:
+    - LKS{B4NG_K2MU_SEP7H_KOK_BISA_YAA}
+
+tags:
+    - crypto
+
+files:
+    - dist/challenge.txt
+
+state: hidden
+
+requirements: []
+next: null
+module: null

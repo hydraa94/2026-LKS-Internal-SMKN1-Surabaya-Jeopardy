@@ -1,0 +1,36 @@
+name: "No Meow Meow"
+author: "hidoraa"
+category: misc
+description: |
+  Our intern put our secret in a very "safe" folder.
+  He said it never leaks the company secrets.
+
+  Can you test it for us please?
+value: 250
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: "nc 194.164.148.36 1327"
+
+solution: writeup/README.md
+
+attempts: 0
+
+logic: any
+
+flags:
+    - LKS{m30W_m3Ow_4a4be40c96ac6314e91d93f38043a634}
+
+tags:
+    - misc
+    - jail
+    - wildcard
+
+state: hidden
+
+requirements: []
+next: null
+module: null

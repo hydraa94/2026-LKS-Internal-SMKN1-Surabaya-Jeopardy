@@ -1,0 +1,34 @@
+name: "RSA Simple"
+author: "NasiGoreng"
+category: crypto
+description: |
+  RSA easy kok, tinggal di decyrpt, just use your google NO AI!
+
+value: 250
+type: standard
+
+image: null
+protocol: null
+host: null
+
+solution: writeup/README.md
+
+attempts: 0
+
+logic: any
+
+flags:
+    - LKS{rsa_its_fun_semangat_lksnya}
+
+tags:
+    - crypto
+
+files:
+    - dist/challenge.txt
+    - dist/solver.py
+
+state: hidden
+
+requirements: []
+next: null
+module: null

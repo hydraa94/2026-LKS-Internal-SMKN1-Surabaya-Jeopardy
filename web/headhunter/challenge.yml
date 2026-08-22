@@ -1,0 +1,38 @@
+name: "Headhunter"
+author: "hidoraa"
+category: web
+description: |
+  A mysterious signal is being broadcast. Establish a connection and see what the system sends back.
+value: 250
+type: standard
+
+image: null
+protocol: null
+host: null
+
+solution: writeup/README.md
+
+attempts: 0
+
+logic: any
+
+flags:
+    - LKS{h34d_hunt3r_4_f0und_m3_v14_h34d3rs}
+
+tags:
+    - web
+    - http
+
+files:
+    - dist/headhunter.zip
+
+hints:
+    - "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers"
+    - "https://curl.se/docs/manpage.html"
+    - "https://portswigger.net/burp/documentation/desktop/getting-started/intercepting-http-traffic"
+
+state: hidden
+
+requirements: []
+next: null
+module: null

@@ -1,0 +1,38 @@
+name: "HueHueHue"
+author: "hidoraa"
+category: misc
+description: |
+  I checked my email this morning, and someone send me this image to me.
+  Can you help me translating this?
+  Flag Format: `LKS{...}`
+value: 250
+type: standard
+
+image: null
+protocol: null
+host: null
+
+solution: writeup/README.md
+
+attempts: 0
+
+logic: any
+
+flags:
+    - LKS{y4yy_y0u_d1d_1t}
+
+tags:
+    - misc
+    - riddle
+
+files:
+    - dist/Soal.png
+
+hints:
+    - "Use ur google man"
+
+state: hidden
+
+requirements: []
+next: null
+module: null

@@ -1,0 +1,44 @@
+name: "Anything You Want"
+author: "hidoraa"
+category: pwn
+description: |
+  You can call the program anything u want.
+
+  I made program that let u send everything and anything you want.
+
+  Can you get the server's secret?
+
+  Author: hidoraa
+value: 250
+type: standard
+
+image: null
+protocol: null
+host: null
+
+connection_info: "nc 194.164.148.36 1317"
+
+solution: writeup/README.md
+
+attempts: 0
+
+logic: any
+
+flags:
+    - LKS{sh3ll_code_goes_brrr}
+
+tags:
+    - shellcraft
+
+files:
+    - dist/chall
+
+hints:
+    - "cari library/tools paling reliable untuk challenge pwn pake python"
+    - "shellcode assembly"
+
+state: hidden
+
+requirements: []
+next: null
+module: null

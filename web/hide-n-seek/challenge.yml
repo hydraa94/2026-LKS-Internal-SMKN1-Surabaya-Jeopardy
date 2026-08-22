@@ -1,0 +1,36 @@
+name: "Hide n Seek"
+author: "hidoraa"
+category: web
+description: |
+  Di antara cahaya bintang dan gelapnya angkasa, selalu ada sesuatu yang tersembunyi.
+  Tidak semua yang tak terlihat, benar-benar tak ada.
+
+value: 150
+type: standard
+
+image: null
+protocol: null
+host: null
+
+solution: writeup/README.md
+
+attempts: 0
+
+logic: any
+
+flags:
+    - LKS{tHe_uN5eEn_wa$_h3R3_@1l_alOnG}
+
+tags:
+    - web
+    - baby
+
+hints:
+    - "Hayo dimana hayo"
+    - "Coba cari pake shortcut"
+
+state: hidden
+
+requirements: []
+next: null
+module: null
