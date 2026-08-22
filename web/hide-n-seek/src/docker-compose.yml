@@ -1,3 +1,4 @@
+name: hide-n-seek
 services:
   hide-n-seek:
     build:

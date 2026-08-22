@@ -1,3 +1,4 @@
+name: ret2win
 services:
   ret2win:
     build:

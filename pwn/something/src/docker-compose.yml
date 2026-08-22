@@ -1,3 +1,4 @@
+name: something
 services:
   something:
     build:

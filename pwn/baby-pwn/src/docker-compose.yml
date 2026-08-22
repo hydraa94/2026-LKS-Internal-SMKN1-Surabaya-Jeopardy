@@ -1,3 +1,4 @@
+name: baby-pwn
 services:
   baby-pwn:
     build:
