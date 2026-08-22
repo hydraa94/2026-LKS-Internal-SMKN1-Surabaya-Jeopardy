@@ -24,12 +24,14 @@ Usage:
   $0 restart        Restart all challenges
   $0 status         Show challenge status
   $0 endpoints      Show challenge endpoints
+  $0 test           Test connectivity of all challenge endpoints
 
   $0 help
 
 Aliases:
   endpoint, ports
   ps, st
+  test, check, healthcheck
   -h, --help
 EOF
 }
@@ -198,6 +200,82 @@ show_endpoints() {
     echo
 }
 
+tcp_check() {
+    local host="$1" port="$2" timeout_s="${3:-3}"
+
+    timeout "$timeout_s" bash -c "exec 3<>/dev/tcp/${host}/${port}" 2>/dev/null
+    local rc=$?
+    exec 3>&- 2>/dev/null || true
+    return $rc
+}
+
+test_endpoints() {
+    HOST_IP=$(host_ip)
+
+    echo
+    echo "========================================"
+    echo " Connection Test"
+    echo "========================================"
+
+    printf "%-35s %-14s %-20s %s\n" \
+        "Challenge" "Container" "Endpoint" "Result"
+
+    printf "%-35s %-14s %-20s %s\n" \
+        "-----------------------------------" \
+        "--------------" \
+        "--------------------" \
+        "------"
+
+    local fail=0
+
+    for compose in "${COMPOSES[@]}"; do
+        dir="$(dirname "$compose")"
+        rel="${dir#$ROOT/}"
+
+        cid=$(docker compose -f "$compose" ps -q | head -n1)
+
+        if [ -z "$cid" ]; then
+            printf "%-35s %-14s %-20s " "$rel" "-" "-"
+            error "STOPPED"
+            fail=1
+            continue
+        fi
+
+        ports=$(docker port "$cid" 2>/dev/null | grep '0.0.0.0:' || true)
+
+        if [ -z "$ports" ]; then
+            printf "%-35s %-14s %-20s " "$rel" "${cid:0:12}" "-"
+            error "NO PORT"
+            fail=1
+            continue
+        fi
+
+        while read -r line; do
+            host_port=$(echo "$line" | sed -E 's/.*:([0-9]+)$/\1/')
+            endpoint="${HOST_IP}:${host_port}"
+
+            printf "%-35s %-14s %-20s " "$rel" "${cid:0:12}" "$endpoint"
+
+            if tcp_check "$HOST_IP" "$host_port" 3; then
+                ok "OK"
+            else
+                error "UNREACHABLE"
+                fail=1
+            fi
+        done <<< "$ports"
+    done
+
+    echo
+
+    if [ "$fail" -eq 1 ]; then
+        warn "One or more endpoints failed."
+        return 1
+    else
+        ok "All endpoints reachable."
+        return 0
+    fi
+}
+
 case "${1:-help}" in
     up)
         require_cmd docker
@@ -233,6 +311,13 @@ case "${1:-help}" in
         check_docker
         load_compose_files
         show_endpoints
+        ;;
+
+    test|check|healthcheck)
+        require_cmd docker
+        check_docker
+        load_compose_files
+        test_endpoints
         ;;
 
     help|-h|--help|"")

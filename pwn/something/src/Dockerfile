@@ -6,7 +6,7 @@ RUN apt update && apt install -y \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
-COPY src/ .
+COPY chall.c build.sh flag.txt .
 RUN ./build.sh && \
     mv ../dist/chall /app/chall
 
