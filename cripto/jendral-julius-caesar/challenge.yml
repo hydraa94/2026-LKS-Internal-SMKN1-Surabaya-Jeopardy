@@ -2,7 +2,8 @@ name: "Jendral Julius Caesar"
 author: "NasiGoreng"
 category: crypto
 description: |
-  Seorang jendral bernama Julius Caesar telah menyembunyikan sebuah pesan rahasia. Bisakah kamu menemukan pesan rahasia tersebut?
+  Seorang jendral bernama Julius Caesar telah menyembunyikan sebuah pesan rahasia. 
+  Bisakah kamu menemukan pesan rahasia tersebut?
 
 value: 150
 type: standard

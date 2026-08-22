@@ -23,7 +23,7 @@ tags:
     - reverse
 
 files:
-    - dist/bingung.pyc
+    - dist/chall.cpython-314.pyc
 
 hints:
     - "https://pylingual.io/"

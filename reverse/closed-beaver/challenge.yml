@@ -27,8 +27,7 @@ tags:
     - AES
 
 files:
-    - dist/closed-beaver
-
+    - dist/beavers.zip
 hints:
     - "do you know what AES-CBC is?"
     - "ghidra's own go analyzer is good enough to help you find all the nessecary AES CBC component, just use filter function feature, then just decrypt it."

@@ -4,6 +4,7 @@ category: misc
 description: |
   I checked my email this morning, and someone send me this image to me.
   Can you help me translating this?
+  
   Flag Format: `LKS{...}`
 value: 250
 type: standard
@@ -29,7 +30,7 @@ files:
     - dist/Soal.png
 
 hints:
-    - "Use ur google man"
+    - "Use ur google, wise man"
 
 state: hidden
 

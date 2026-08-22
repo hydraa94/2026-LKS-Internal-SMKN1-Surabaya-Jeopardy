@@ -3,12 +3,9 @@ author: "hidoraa"
 category: pwn
 description: |
   You can call the program anything u want.
-
   I made program that let u send everything and anything you want.
-
   Can you get the server's secret?
 
-  Author: hidoraa
 value: 250
 type: standard
 

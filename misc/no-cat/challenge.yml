@@ -31,6 +31,9 @@ tags:
 
 state: hidden
 
+hints:
+    - command untuk melihat isi file bukan hanya itu saja
+
 requirements: []
 next: null
 module: null

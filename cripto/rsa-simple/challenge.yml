@@ -17,6 +17,9 @@ attempts: 0
 
 logic: any
 
+files: 
+    - dist/challenge.txt
+
 flags:
     - LKS{rsa_its_fun_semangat_lksnya}
 

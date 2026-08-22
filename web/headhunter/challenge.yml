@@ -2,7 +2,8 @@ name: "Headhunter"
 author: "hidoraa"
 category: web
 description: |
-  A mysterious signal is being broadcast. Establish a connection and see what the system sends back.
+  A mysterious signal is being broadcast. 
+  Establish a connection and see what the system sends back.
 value: 250
 type: standard
 
@@ -24,7 +25,7 @@ tags:
     - http
 
 files:
-    - dist/headhunter.zip
+    - dist/chall.zip
 
 hints:
     - "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers"

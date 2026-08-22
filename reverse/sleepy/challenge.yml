@@ -23,7 +23,7 @@ tags:
     - reverse
 
 files:
-    - dist/sleepy.py
+    - dist/chall
 
 hints:
     - "Just patched it bruh"
