@@ -1,0 +1,14 @@
+services:
+  um-um:
+    build: .
+    container_name: um-um-service
+    restart: always
+    ports:
+      - "22201:3000"
+    environment:
+      - NODE_ENV=production
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: '0.8'

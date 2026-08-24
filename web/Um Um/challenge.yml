@@ -1,0 +1,26 @@
+name: "Um Um"
+category: Web Exploitation
+description: |-
+  Um Um was originally using classic stack, but now it's revamped with latest tech. 
+  Check out our new Dashboard! It's much faster and more secure than before.
+
+  Flag path : /flag
+
+  author: Enryu
+
+  <a href="http://54.151.131.162:22201/">http://54.151.131.162:22201/</a>
+
+##### DON'T CHANGE
+value: 250
+type: standard
+##### DON'T CHANGE
+
+flags:
+  - LKS{e4f49cea01b47cb49e9bcaedd1ba5efd}
+
+tags:
+  - easy
+
+state: hidden
+
+version: "2.0"
